@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+@font-face {
+    font-family: mont;
+    src: url(./FONTS/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: mont;
+}
+
+nav {
+    width: 95vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+}
+
+nav input {
+    width: 25vw;
+    padding: 1.5rem;
+    margin-right: 3rem;
+    border-radius: 1rem;
+    border: 1px grey solid;
+}
+::placeholder{
+    font-family: mont;
+}
+nav button {
+    font-size: 1.6rem;
+    border-radius: 10px;
+    padding: 1.5rem 2.5rem;
+    outline: none;
+    border: 1px solid lightgrey;
+    background-color: white;
+    font-family: mont;
+}
+nav button:hover{
+    background-color: black;
+    color: white;
+}
+
+.header-images {
+    display: grid;
+    grid-template-areas: 
+        "nisha nisha spunky shredded super"
+        "nisha nisha redape disk duck"
+    ;
+    height: 80vh;
+    width: 95vw;
+    margin: 0 auto;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.header-images div {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+.header-images p {
+    font-size: 2.4rem;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 50%;
+}
+
+.header-images div:nth-child(1) {
+    background-image: url(./img/nisha.png);
+    grid-area: nisha;
+}
+
+.header-images div:nth-child(2) {
+    background-image: url(./img/spunky.png);
+    grid-area: spunky;
+}
+
+.header-images div:nth-child(3) {
+    background-image: url(./img/shredded.png);
+    grid-area: shredded;
+}
+
+.header-images div:nth-child(4) {
+    background-image: url(./img/super.png);
+    grid-area: super;
+}
+
+.header-images div:nth-child(5) {
+    background-image: url(./img/redape.png);
+    grid-area: redape;
+}
+
+.header-images div:nth-child(6) {
+    background-image: url(./img/disk.png);
+    grid-area: disk;
+}
+
+.header-images div:nth-child(7) {
+    background-image: url(./img/duck.png);
+    grid-area: duck;
+}
+
+.section-1 {
+    background-color: white;
+    position: relative;
+    margin-top: 4rem;
+    text-align: center;
+}
+.trending{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.trending h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.trending-coins img{
+    width: 5rem;
+}
+
+.trending-coins div {
+    border: 1px solid #00AAA4;
+    padding: 4rem;
+}
+
+.trending-coins {
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+}
