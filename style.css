@@ -44,6 +44,9 @@ nav ul li a {
     color: black;
     font-size: 1.6rem;
 }
+nav ul li a:hover{
+    color: #00AAA4;
+}
 
 nav input {
     width: 25vw;
@@ -65,8 +68,9 @@ nav button {
     font-family: mont;
 }
 nav button:hover{
-    background-color: black;
+    background-color: #00AAA4;
     color: white;
+    transform: rotate(3deg);
 }
 
 .header-images {
@@ -88,9 +92,15 @@ nav button:hover{
     background-size: cover;
     border-radius: 1rem;
 }
-
+.header-images div:hover{
+    transform: scale(1.02);
+    transform: rotate(2deg);
+}
+.header-images span{
+    color: #000;
+}
 .header-images p {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: white;
     position: absolute;
     top: 5%;
@@ -99,68 +109,66 @@ nav button:hover{
 }
 
 .header-images div:nth-child(1) {
-    background-image: url(./img/nisha.png);
+    background-image: url(./img/nft1.png);
     grid-area: nisha;
 }
 
 .header-images div:nth-child(2) {
-    background-image: url(./img/spunky.png);
+    background-image: url(./img/nft2.png);
     grid-area: spunky;
 }
 
 .header-images div:nth-child(3) {
-    background-image: url(./img/shredded.png);
+    background-image: url(./img/nft3.png);
     grid-area: shredded;
 }
 
 .header-images div:nth-child(4) {
-    background-image: url(./img/super.png);
+    background-image: url(./img/nft4.png);
     grid-area: super;
 }
 
 .header-images div:nth-child(5) {
-    background-image: url(./img/redape.png);
+    background-image: url(./img/nft5.png);
     grid-area: redape;
 }
 
 .header-images div:nth-child(6) {
-    background-image: url(./img/disk.png);
+    background-image: url(./img/nft6.png);
     grid-area: disk;
 }
 
 .header-images div:nth-child(7) {
-    background-image: url(./img/duck.png);
+    background-image: url(./img/nft7.png);
     grid-area: duck;
 }
-
-.section-1 {
-    background-color: white;
-    position: relative;
-    margin-top: 4rem;
-    text-align: center;
+.section-1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1rem;
+    height: 100vh;
+    margin: 2rem 0;
 }
 .trending{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: center;
 }
 .trending h2{
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: bold;
 }
-.trending-coins img{
-    width: 5rem;
+.trending span{
+    color: #00AAA4;
 }
-
-.trending-coins div {
-    border: 1px solid #00AAA4;
-    padding: 4rem;
+.trending p{
+    font-size: 1.8rem;
+    font-weight: bold;
 }
-
-.trending-coins {
+.trending-coins div{
     display: flex;
-    width: 30%;
-    margin: 0 auto;
+    flex-direction: column;
     justify-content: space-between;
-    text-align: center;
+    border: 0.5px #00AAA4 solid;
 }
