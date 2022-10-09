@@ -66,11 +66,11 @@ nav button {
     border: 1px solid lightgrey;
     background-color: white;
     font-family: mont;
+    transition: 0.25s;
 }
 nav button:hover{
     background-color: #00AAA4;
     color: white;
-    transform: rotate(3deg);
 }
 
 .header-images {
@@ -147,28 +147,271 @@ nav button:hover{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3,1fr);
     gap: 1rem;
-    height: 100vh;
+    height: 120vh;
     margin: 2rem 0;
 }
 .trending{
     grid-row: 1/2;
     grid-column: 1/2;
     text-align: center;
+    height: 50%;
 }
 .trending h2{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 .trending span{
     color: #00AAA4;
+    font-weight: bolder;
 }
 .trending p{
     font-size: 1.8rem;
     font-weight: bold;
 }
+.trending-coins{
+    position: relative;
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
 .trending-coins div{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border: .5px #00AAA4 solid;
+    border-radius: 1rem;
+    width: 15%;
+    height: 100%;
+}
+.trending-coins div:hover{
+    cursor: pointer;
+}
+.trending-coins div:nth-child(1){
+    position: absolute;
+    bottom: 30%;
+}
+.trending-coins div > article{
+    position: relative;
+    height: 10rem;
+    width: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.trending-coins div img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+.trending-coin-title, .price{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.percentage{
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #00AAA4;
+}
+.trending-coin-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3rem;
+    text-align: center;
+}
+.trending-coin-grid article{
+    border: #00AAA4 .5px solid;
+    border-radius: 1rem;
+    display: flex;
     justify-content: space-between;
-    border: 0.5px #00AAA4 solid;
+    align-items: center;
+    padding: 0 2rem;
+    transition: 0.25s;
+}
+.trending-coin-grid article:hover{
+    transform: scale(1.05);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.trending-coin-grid p{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.trending-coin-grid p:nth-child(3){
+    color: #00AAA4;
+    font-size: 1.5rem;
+}
+.section-2{
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    height: 150vh;
+}
+.section-2 h2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5rem;
+    margin: 2rem 0;
+}
+.firecraker{
+    position: absolute;
+    left: 67%;
+    margin-top: 2.5rem;
+    height: 4rem;
+    width: 4rem;
+}
+.collection-grid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    height: 80%;
+    width: 90%;
+}
+.background{
+    background-image: url(./img/nft\ 11.png);
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius: .5rem;
+}
+.background p{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.coin-info{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #000;
+    border-radius: 1rem;
+    height: 20%;
+}
+.coin-info > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin: 1rem;
+    padding: 1rem;
+    border: #00AAA4 .5px solid;
+    border-radius: 2rem;
+}
+.coin-info > div p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.coin-info > div > p{
+    color: #00AAA4;
+    font-size: 1.2rem;
+}
+.coin-info > img{
+    width: 20%;
+    height: 55%;
+    margin: auto 0;
+}
+.section-2 a{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem 4rem;
+    border: #00AAA4 2px solid;
+    border-radius: 3rem;
+    transition: 0.25s;
+}
+.section-2 a:hover{
+    background-color: #00AAA4;
+    color: #000;
+    font-weight: bold;
+}
+.section-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+.section-3 h2{
+    position: relative;
+    font-size: 3.5rem;
+    margin: 3rem 0;
+}
+.fire{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 56%;
+    margin: 3rem 0;
+}
+.section-3-grid-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2rem;
+    width: 90%;
+    height: 50vh;
+}
+.section-3-grid-container article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: #000 .5px solid;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.section-3-grid-container article:hover{
+    transform: rotate(2deg);
+}
+.section-3-grid-container article > img{
+    height: 50%;
+    width: 65%;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+.section-3-grid-container article div:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+}
+.section-3-grid-container article div i{
+    font-size: 3rem;
+}
+.price-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 15%;
+    height: 15%;
+}
+.buy-now{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    row-gap: 2rem;
+}
+.buy-now p:nth-child(1){
+    color: #00AAA4;
+}
+footer{
+    height: 50vh;
+    width: 90%;
+}
+.general-info{
+    display: flex;
+    justify-content: space-around;
 }
