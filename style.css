@@ -291,10 +291,6 @@ body {
         height: 40%;
         transition: .25s;
     }
-     .coin-info:hover{
-        transform: scale(1.05);
-        padding: .2rem 1rem;
-    }
     .coin-info > div{
         display: flex;
         justify-content: space-between;
@@ -777,10 +773,6 @@ body {
         height: 30%;
         transition: .25s;
     }
-     .coin-info:hover{
-        transform: scale(1.05);
-        padding: .2rem 1rem;
-    }
     .coin-info > div{
         display: flex;
         justify-content: space-between;
@@ -1225,6 +1217,13 @@ body {
         height: 80%;
         width: 80%;
     }
+    .collection-grid article{
+        transition: .25s;
+    }
+    .collection-grid article:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
     .background-1{
         background-image: url(./img/nft\ 11.png);
     }
@@ -1266,13 +1265,8 @@ body {
         justify-content: space-between;
         background-color: #fff;
         color: #000;
-        border-radius: 1rem;
+        border-radius: 0;
         height: 20%;
-        transition: .25s;
-    }
-     .coin-info:hover{
-        transform: scale(1.05);
-        padding: .2rem 1rem;
     }
     .coin-info > div{
         display: flex;
@@ -1282,7 +1276,6 @@ body {
         margin: 1rem;
         padding: 1rem;
         border: #00AAA4 .5px solid;
-        border-radius: 2rem;
     }
     .coin-info > div p{
         font-size: 1rem;
