@@ -471,7 +471,7 @@ body {
         padding: 3rem 0;
     }
     .fa-bars{
-        display: none;
+        opacity: 0;
     }
     nav div {
         display: flex;
@@ -955,7 +955,7 @@ body {
         padding: 3rem 0;
     }
     .fa-bars{
-        display: none;
+        opacity: 0;
     }
     nav div {
         display: flex;
